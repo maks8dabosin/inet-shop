@@ -1,14 +1,122 @@
 @import url('reset.css');
 
+
+/*GENERAL*/
+
+html, body {
+	height: 100%;
+}
+
 body {
 	font-size: 16px;
 	font-family: Verdana;
+	background: #E5EDDC;
+	height: 100%;
 }
 
 .wrapper {
-	width: 1000px;
+	width: 1200px;
+	padding: 1px 0 0 0;
+	box-sizing: border-box;
 	margin: 0 auto;
+	position: relative;
+  	min-height: 100%;
 }
+
+.content {
+	box-sizing: border-box;
+	min-height: 100%;
+	padding: 160px 0 140px 0;
+}
+
+.page-header {
+	position: fixed;
+	height: 120px;
+	width: 100%;
+	-webkit-box-shadow: 0px 2px 19px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 2px 19px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 2px 19px 0px rgba(0,0,0,0.75);
+	background: #fff;
+	z-index: 10;
+}
+
+.logo {
+	display: block;
+	text-decoration: none;
+	width: 300px;
+	height: 87px;
+	margin: 15px 0 0 40px;
+	background: url('../images/logo.jpg') no-repeat;
+	float: left;
+}
+
+.header-right {
+	float: right;
+	margin: 32px 40px 0 0;
+}
+
+.header-right > * {
+	float: left;
+}
+
+.header-search {
+	margin: 6px 0 0 0;
+}
+
+.header-right input[type="search"] {
+	border: 2px solid #282828;
+	outline: 0;
+	padding: 5px 5px 5px 50px;
+	height: 40px;
+	font-size: 16px;
+	display: block;
+	width: 200px;
+	box-sizing: border-box;
+	background: url('../images/search.png') 5px 50% no-repeat;
+	background-size: 40px;
+	border-radius: 25px;
+}
+
+.shop-cart {
+	display: block;
+	width: 50px;
+	height: 50px;
+	background: url('../images/cart.png') no-repeat;
+	margin: 0 0 0 25px;
+}
+
+.auth {
+	display: block;
+	width: 50px;
+	height: 50px;
+	background: url('../images/auth.png') no-repeat;
+	margin: 0 0 0 15px;
+}
+
+.page-footer {
+	height: 100px;
+  	margin-top: -100px;
+  	width: 100%;
+  	padding: 1px 0 0 0;
+  	background: #E4E2A1;
+  	box-sizing: border-box;
+}
+
+.footer-copyright {
+	font-size: 18px;
+	margin: 40px 0 0 40px;
+}
+
+.footer-copyright strong {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.footer-copyright span {
+	font-size: 24px;
+}
+
+/*MODAL*/
 
 .modal {
 	position: fixed;
@@ -20,7 +128,7 @@ body {
 	border: 5px solid #000;
 	box-sizing: border-box;
 	padding: 20px 50px;
-	background: #CFDBE9;
+	background: #E4E2A1;
 }
 
 .close {
@@ -89,9 +197,50 @@ body {
 	display: block;
 	float: right;
 	margin: 5px 0 0 0;
-	color: #000;
+	color: #D3232D;
 }
 
 .go-register:hover {
 	text-decoration: none;
 }
+
+/*CONTENT*/
+
+.categories {
+	width: 100%;
+	background: #fff;
+	padding: 60px 0;
+}
+
+.categories:after {
+	content: ' ';
+	clear: both;
+	display: block;
+}
+
+.cat-box {
+	float: left;
+	text-align: center;
+	width: 220px;
+	height: 250px;
+	margin: 20px 35px;
+}
+
+/*.categories .cat-box:first-child, .categories .cat-box:nth-child(4n+5) {
+	margin: 0 0 20px 0;
+}*/
+
+.cat-box img {
+	display: block;
+	width: 180px;
+	margin: 0 auto 15px auto;
+}
+
+.cat-box a {
+	display: block;
+	margin: 0 0 5px 0;
+	color: #D3232D;
+}
+
+
+
